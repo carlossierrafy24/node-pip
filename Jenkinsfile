@@ -6,6 +6,11 @@ pipeline {
             steps {
                 sh 'node --version'
             }
+        },
+        stage('Test Docker') {
+            steps {
+                sh 'docker --version'
+            }
         }
     }
 }
